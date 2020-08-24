@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+h1 {
+	color: #E45E00;
+	text-align: center;
+}
+
+.hamburger {
+	border: none;
+	width: 50px;
+	height: 50px;
+	background-size: contain;
+}
+
+.navbar {
+	display: none;
+	margin: 0;
+	padding 0;
+	list-style-type: none;
+	background: orange;
+}
+
+.navbar li a {
+	display: block;
+	padding: 10px 8px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar li a:hover {
+	background: #fff;
+	color: #565656;
+}
+
+@media only screen and (min-width: 768px) {
+	.hamburger {
+		display: none;
+	}
+	.navbar {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+.item-1 {
+	float: left;
+	margin: 8px 0 8px 8px;
+	border: 5px solid #00F;
+	padding: 8px;
+	width: 300px;
+	background-color: #00F;
+}
+
+.item-2 {
+	float: left;
+	margin: 8px 0 8px 8px;
+	border: 5px solid red;
+	padding: 8px;
+	width: 300px;
+	background-color: red;
+}
+
+.item-3 {
+	float: left;
+	margin: 8px 0 8px 8px;
+	border: 5px solid #008000;
+	padding: 8px;
+	width: 300px;
+	background-color: #008000;
+}		
+
+.item-4 {
+	float: left;
+	margin: 8px 0 8px 8px;
+	border: 5px solid purple;
+	padding: 8px;
+	width: 300px;
+	background-color: purple;
+}
+
+.item-5 {
+	float: left;
+	margin: 8px 0 8px 8px;
+	border: 5px solid orange;
+	padding: 8px;
+	width: 300px;
+	background-color: orange;
+}
+
+.item-6 {
+	font-size: 30px;
+	float: left;
+	margin: 8px 0 8px 100px;
+	border: 5px dashed black;
+	padding: 8px;
+	width: 400px;
+	height: 400px;
+	background-color: brown;
+	line-height: 2.5;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.wrapper a {
+	color: white;
+	text-decoration: none;
+}
+.wrapper-2 a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.ul-1 li {
+	display: inline-block;
+	margin-left: 8px;
+}
+.ul-1 li::before {
+	content: "・";
+}
+.ul-1 p {
+	color: blue;
+}
+.ul-1 p {
+	color: blue;
+}
+.ul-1 {
+	font-family: serif;
+}
+
+.float-box {
+	float: right;
+	margin-left: 1em;
+	vertical-align: baseline;
+}
+.float-clear {
+	overflow: hidden;
+	border: 5px double orange;
+	width: 600px;
+	font-size: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 40px 0 0 1000px;
+	border: 10px solid gray;
+}
+th, td {
+	border: 1px solid #8fbac8;
+	padding: 10px;
+}
+th {
+	background-color: #E45E00;
+	color: white;
+}
+.tables a:active {
+	text-decoration: none;
+	color: black;
+}
+
+.cyber {
+	line-height: 1.7;
+	border: 2px solid lightblue;
+}
+.specialist {
+	line-height: 1.7;
+	border: 2px solid red;
+}
+
+h3 {
+	margin: 40px 0 0;
+	color: blue;
+}
+p .lead {
+	font-weight: bold;
+}
+
+.spe-h3 {
+	color: #DC4067;
+}
