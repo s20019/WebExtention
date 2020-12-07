@@ -2,15 +2,19 @@
 
 body {
 	margin: 0;
-	color: #444;
 }
 
 .container {
 	margin: 0 auto 0 auto;	/* 左右がオートになってるので中央揃えになる */
-	padding: 0 16px 0 16px;
 	max-width: 1000px;	/* スマホだったら750px */
 }
 
+section .container {
+	display: flex;
+	flex-flow: column;
+}
+
+/*
 nav {
 	margin-bottom: 20px;
 }
@@ -18,6 +22,7 @@ nav {
 footer {
 	margin-top: 20px;
 }
+*/
 
 /* 各パートにパディング、背景、テキスト色などを指定する。<div class="container">の子要素に指定する */
 .header-inner {
@@ -31,7 +36,7 @@ footer {
 	padding: 10px 10px 0 10px;
 }
 
-.main-inner {
+main {
 	background: #fffde3;
 	padding: 20px 10px;
 
@@ -39,7 +44,8 @@ footer {
 	height: 400px;
 }
 
-main p:last-child {		/* mainの中にある最後のpタグを指定している */
+/*
+main p:last-child {		mainの中にある最後のpタグを指定している
 	margin-bottom: 0;
 }
 
@@ -50,8 +56,9 @@ main p:last-child {		/* mainの中にある最後のpタグを指定している
 .copyright {
 	margin: 0;
 }
+*/
 
-.sidebar-inner {
+.sidebar {
 	background: #c0f5b9;
 	padding: 20px 10px;
 }
@@ -61,5 +68,22 @@ main p:last-child {		/* mainの中にある最後のpタグを指定している
 	padding: 20px 16px 10px;
 }
 
+@media only screen and (min-width: 768px) {
+	section .container {
+		flex-flow: row;		/* 横並びにする*/
+	}
+	main {
+		flex: 1 1 auto;
+		order: 2;
+	}
+	.sidebar1 {
+		flex: 0 0 200px;
+		order: 1;
+	}
+	.sidebar2 {
+		flex: 0 0 250px;
+		order: 3;
+	}
+}
 
 
